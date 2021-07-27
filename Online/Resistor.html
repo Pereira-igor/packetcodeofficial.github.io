@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!-- https://fonts.google.com/ -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/templatemo-video-catalog.css">
+</head>
+
+<body>
+	<div class="tm-page-wrap mx-auto">
+		<div class="position-relative">
+			<div class="potition-absolute tm-site-header">
+				<div class="container-fluid position-relative">
+					<div class="row">						
+                        <div class="col-5 col-md-8 ml-auto mr-0">
+                            <div class="tm-site-nav">
+                                <nav class="navbar navbar-expand-lg mr-0 ml-auto" id="tm-main-nav">
+                                    <button class="navbar-toggler tm-bg-black py-2 px-3 mr-0 ml-auto collapsed" type="button"
+                                        data-toggle="collapse" data-target="#navbar-nav" aria-controls="navbar-nav"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span>
+                                            <i class="fas fa-bars tm-menu-closed-icon"></i>
+                                            <i class="fas fa-times tm-menu-opened-icon"></i>
+                                        </span>
+                                    </button>
+                                    <div class="collapse navbar-collapse tm-nav" id="navbar-nav">
+                                        <ul class="navbar-nav text-uppercase">
+                                            <li class="nav-item ">
+                                                <a class="nav-link tm-nav-link" href="indexR.html">Videos</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link tm-nav-link" href="https://www.youtube.com/watch?v=f6rCfkeRwv8&list=PLgJA6YIHwAU6mhAvUmR97i4ttsvsQmYiS">Youtube</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+					</div>
+				</div>
+			</div>
+			<div class="tm-welcome-container tm-fixed-header tm-fixed-header-1">
+				<div class="text-center">
+					<p class="pt-5 px-3 tm-welcome-text tm-welcome-text-2 mb-1 text-white mx-auto">
+					</p>                	
+				</div>                
+            </div>
+
+			<!-- Header image -->
+            <div id="tm-fixed-header-bg"></div> 
+		</div>
+
+		<!-- Page content -->
+		<div class="container-fluid">
+			<div class="mx-auto tm-content-container">
+				<main>
+					<div class="row mb-5 pb-4">
+						<div class="col-12">
+							<!-- Video player 1422x800 -->
+							<video width="1422" height="800" controls autoplay>
+							  <source src="video/Resistor.mp4" type="video/mp4">							  
+							Your browser does not support the video tag.
+							</video>
+						</div>
+					</div>
+					<div class="row mb-5 pb-5">
+						<div>
+							<!-- Video description -->
+							<div>
+								<h2 class="mb-5 tm-video-title"><b>Resistor</b></h2>
+								<p class="mb-2" style="text-align: justify;">
+									São componentes eletrônicos que resistem à passagem de corrente elétrica. 
+									Quando inserimos um resistor em um circuito elétrico, ocorre uma diminuição na
+									 intensidade da corrente elétrica, além disso, a presença dele ao longo de um fio 
+									 acarreta redução ou queda do potencial elétrico.
+									Alguns resistores conseguem manter sua resistência elétrica constante, 
+									mesmo em um grande intervalo de tensões elétricas, eles são conhecidos como resistores ôhmicos.
+								</p>
+								<p class="mb-2, style="text-align: justify;">
+									Eles podem ser diferentes de acordo com o material com que foram produzidos, além disso, existem resistores que mudam de resistência quando submetidos a diferentes agentes externos.
+								Alguns deles são sensíveis a variações de temperatura e conhecidos como termoresistores. 
+								Além deles, há os que respondem a variações na luminosidade, conhecidos como fotoresistores.	
+								Há, ainda, resistores que mudam de resistência quando submetidos a campos magnéticos, são os magnetoresistores.
+								</p>
+									<p class="mb-2, style="text-align: justify;"> 
+									<h4>Código dos resistores</h4>
+									<p class="mb-2, style="text-align: justify;"> Esse código é utilizado para representar visualmente a resistência elétrica dos resistores, como mostramos na figura:
+									</p>
+										<center>
+									<img src="img/Resistor.png" style="height: 300px;">
+								</center>
+									</p>
+									<p class ="mb-2, style="text-align: justify;"> 
+										De acordo com o código de cores, as duas primeiras faixas indicam os dois dígitos iniciais da resistência, 
+										enquanto a terceira faixa indica o múltiplo (1, 10, 1000) que devemos multiplicar pelos dois primeiros dígitos. 
+										A última faixa indica a pureza ou o grau de tolerância, em porcentagem, que a medida da resistência pode divergir do valor teórico designado para aquele resistor.
+									</p>
+							</div>		
+							<p class="mb-2" style="text-align: justify;">
+								Para saber mais, acesse: <a href="https://brasilescola.uol.com.br/o-que-e/fisica/o-que-sao-resistores.htm" style="color: green;"> <b> o que são resistores ?</b></a>
+							</p>
+								<p class ="mb-2, style="text-align: justify;">Referência do sinal em libras:<a href="https://www.youtube.com/watch?v=kTNbRYJO28o" style="color: green;"> <b>https://www.youtube.com/watch?v=kTNbRYJO28o</b></a></p>
+											
+						</div>
+						
+					</div>
+
+
+				</main>
+			</div> <!-- .tm-content-container -->
+		</div>
+	</div>
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+    	$(document).ready(function() {
+    		$('.tm-likes-box').click(function(e) {
+    			e.preventDefault();
+    			$(this).toggleClass('tm-liked');
+
+    			if($(this).hasClass('tm-liked')) {
+    				$('#tm-likes-count').html('486 likes');
+    			} else {
+    				$('#tm-likes-count').html('485 likes');
+    			}
+    		});
+    	});
+    </script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!-- https://fonts.google.com/ -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/templatemo-video-catalog.css">
+</head>
+
+<body>
+	<div class="tm-page-wrap mx-auto">
+		<div class="position-relative">
+			<div class="potition-absolute tm-site-header">
+				<div class="container-fluid position-relative">
+					<div class="row">						
+                        <div class="col-5 col-md-8 ml-auto mr-0">
+                            <div class="tm-site-nav">
+                                <nav class="navbar navbar-expand-lg mr-0 ml-auto" id="tm-main-nav">
+                                    <button class="navbar-toggler tm-bg-black py-2 px-3 mr-0 ml-auto collapsed" type="button"
+                                        data-toggle="collapse" data-target="#navbar-nav" aria-controls="navbar-nav"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span>
+                                            <i class="fas fa-bars tm-menu-closed-icon"></i>
+                                            <i class="fas fa-times tm-menu-opened-icon"></i>
+                                        </span>
+                                    </button>
+                                    <div class="collapse navbar-collapse tm-nav" id="navbar-nav">
+                                        <ul class="navbar-nav text-uppercase">
+                                            <li class="nav-item ">
+                                                <a class="nav-link tm-nav-link" href="indexJ.html">Videos</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link tm-nav-link" href="https://www.youtube.com/watch?v=f6rCfkeRwv8&list=PLgJA6YIHwAU6mhAvUmR97i4ttsvsQmYiS">Youtube</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+					</div>
+				</div>
+			</div>
+			<div class="tm-welcome-container tm-fixed-header tm-fixed-header-1">
+				<div class="text-center">
+					<p class="pt-5 px-3 tm-welcome-text tm-welcome-text-2 mb-1 text-white mx-auto">
+					</p>                	
+				</div>                
+            </div>
+
+			<!-- Header image -->
+            <div id="tm-fixed-header-bg"></div> 
+		</div>
+
+		<!-- Page content -->
+		<div class="container-fluid">
+			<div class="mx-auto tm-content-container">
+				<main>
+					<div class="row mb-5 pb-4">
+						<div class="col-12">
+							<!-- Video player 1422x800 -->
+							<video width="1422" height="800" controls autoplay>
+							  <source src="video/Jumper.mp4" type="video/mp4">							  
+							Your browser does not support the video tag.
+							</video>
+						</div>
+					</div>
+					<div class="row mb-5 pb-5">
+						<div>
+							<!-- Video description -->
+							<div>
+								<h2 class="mb-5 tm-video-title"><b>Jumper</b></h2>
+								<p class="mb-2" style="text-align: justify;">
+									Jumper é um pequeno condutor utilizado para conectar dois pontos de um circuito 
+									eletrônico. São geralmente utilizados para configurar placas de circuitos, como placas-mãe de computadores.Também denomina-se jumper um segmento de fio 
+									condutor soldado diretamente às ilhas de uma placa de circuito impresso com a função de interligar dois pontos do circuito.								
+								</p>
+								<p class="mb-2, style="text-align: justify;">
+									Jumpers são condutores elétricos, geralmente encapsulados por um bloco isolante de plástico. Isso evita o risco de o jumper, 
+									acidentalmente,fechar curto-circuito (particularmente quando é derrubado sobre circuitos em funcionamento).
+								</p>
+									<p class="mb-2, style="text-align: justify;"> 
+										Usam-se jumpers desde a criação das placas de circuitos impressos. Quando se põe um jumper sobre dois ou mais pinos,
+										estabelece-se uma conexão elétrica entre eles, e o equipamento é, então, instruído a funcionar de acordo com determinadas configurações. 
+										Por exemplo, com computadores antigos, a velocidade e tensão elétrica da CPU eram configuradas por jumpers.	
+									</p>
+									<p class ="mb-2, style="text-align: justify;"> 
+										Alguns manuais referem-se às configurações dos jumpers como ligado ou desligado, ou fechado ou aberto. 
+										Quando um jumper está conectado a pelo menos dois pinos, 
+										está fechado. Quando está conectado apenas a um pino ou a nenhum pino, está aberto.
+									</p>
+									<p class="mb-2" style="text-align: justify;">
+										Para saber mais, acesse: <a href="https://sc.senai.br/sites/default/files/inline-files/Glossario%20tecnico%20-%20Eletricista_instalador_residencial.pdf" style="color: green;"> <b>Jumper.</b></a>
+									</p>
+										<p class ="mb-2, style="text-align: justify;">Referência do sinal em libras:<a href="https://sc.senai.br/sites/default/files/inline-files/Glossario%20tecnico%20-%20Eletricista_instalador_residencial.pdf" style="color: green;"> <b>Glossário técnico Senai</b></a></p>
+								
+							</div>							
+						</div>
+						
+					</div>
+
+
+				</main>
+			</div> <!-- .tm-content-container -->
+		</div>
+	</div>
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+    	$(document).ready(function() {
+    		$('.tm-likes-box').click(function(e) {
+    			e.preventDefault();
+    			$(this).toggleClass('tm-liked');
+
+    			if($(this).hasClass('tm-liked')) {
+    				$('#tm-likes-count').html('486 likes');
+    			} else {
+    				$('#tm-likes-count').html('485 likes');
+    			}
+    		});
+    	});
+    </script>
+</body>
+</html>
